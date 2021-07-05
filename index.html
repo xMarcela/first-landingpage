@@ -164,6 +164,23 @@
         <button class="sub-button">Subscribe to our newsletter</button>
         <hr>
         <p class="footer">This page was built by A. Marcela Ravn</p>
+
+        <script>
+            function subscribeNow() {
+                let name = prompt("Hi, what's your name?👋");
+                let email = prompt("What is your email?📧");
+                let sub = prompt("You want to subscribe?✍");
+
+                if (sub === "yes" || sub === "YES") {
+                    alert("Thank you, " + name + " . You will be notified by " + email + "!");
+                } else {
+                    alert("Sorry, " + name + " . Maybe next time");
+                }
+            }
+
+            let applyButton = document.querySelector("button");
+            applyButton.addEventListener("click", subscribeNow);
+        </script>
     </div>
 </body>
 
